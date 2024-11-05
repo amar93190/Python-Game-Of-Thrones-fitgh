@@ -1,53 +1,61 @@
-# Python-Game-Of-Thrones-fitgh
+#🧙 Battle of Wizards 🧙
+<p align="center"> <em>A magical duel of wits and strength between two iconic characters: <strong>Gandalf</strong> and <strong>Sauron</strong>!</em> </p>
+🌟 Project Overview
+Battle of Wizards is a Python-based game featuring a turn-based duel between Gandalf, the White Wizard, and Sauron, the Dark Sorcerer. Each character has unique abilities, and the game continues until one character’s health reaches zero.
 
-<p>This project is a Python game featuring a magical duel between two legendary characters, <strong>Gandalf</strong> and <strong>Sauron</strong>. Each character possesses unique attacks and abilities, with the aim to battle until one character’s health is fully depleted.</p>
-<h2>Project Overview</h2>
-<p>This game simulates a turn-based combat where players can watch a back-and-forth magical duel between Gandalf, the White Wizard, and Sauron, the Dark Sorcerer. The game continues until one character wins by reducing the opponent's health points (HP) to zero.</p>
-Features
-Characters: Each character has special attacks with distinct damage points.
-Turn-based Gameplay: Gandalf and Sauron take turns attacking each other, with a small chance to evade attacks.
-Experience Gain: Characters gain experience based on their attack power.
-Simple Command Line Interface: The game can be easily played from the command line.
-Classes
-Personnage
-<p>The abstract base class for the characters. This class defines:</p>
-Attributes: nom (name), vie (health), experience, degats (damage taken), and attacks.
+<h2>⚔️ Features</h2>
+Dynamic Characters: Each character has their own set of powerful attacks and unique attributes.
+Turn-Based Gameplay: Watch Gandalf and Sauron battle it out in an automated, turn-by-turn combat sequence.
+Experience Gain: Characters gain experience points from each attack, bringing them closer to victory.
+Command Line Interface: Simple and interactive, playable directly from the terminal.
+<h2>🏆 Gameplay Classes</h2>
+🧝‍♂️ Personnage
+<p>The base class that defines core attributes and methods for characters:</p>
+Attributes:
+nom: Character name
+vie: Health points (HP)
+experience: Experience points
+degats: Accumulated damage
+attacks: List of attacks
 Methods:
-frappe(): Abstract method to be implemented by each character.
-recevoir_degats(): Handles incoming damage and updates the character's HP.
-esquive(): A chance-based dodge method that may prevent damage.
-MagicienBlanc (Gandalf)
-<p>A subclass of `Personnage` with specific attacks:</p>
-Attacks: "Boule de Feu" (Fireball) and "Sort de Glace" (Ice Spell).
-frappe(): Randomly selects an attack and applies its damage to the opponent.
-RoiSorcier (Sauron)
-<p>A subclass of `Personnage` representing a powerful dark sorcerer with unique attacks:</p>
-Attacks: "Maudit" (Curse) and "Explosion Noire" (Black Explosion).
-frappe(): Randomly selects an attack and applies its damage to the opponent.
-Getting Started
+frappe(): Abstract method to handle attacks, implemented in subclasses.
+recevoir_degats(): Processes incoming damage and updates health points.
+esquive(): Adds a chance to dodge an attack, adding depth to gameplay.
+🧙 MagicienBlanc (Gandalf)
+<p>A subclass of `Personnage` representing Gandalf, featuring specific magical abilities:</p>
+Attacks:
+"Boule de Feu" (Fireball)
+"Sort de Glace" (Ice Spell)
+Special Method: Gandalf’s frappe() method selects and applies an attack randomly to the opponent.
+👿 RoiSorcier (Sauron)
+<p>A subclass representing Sauron, who uses dark magic to overpower opponents:</p>
+Attacks:
+"Maudit" (Curse)
+"Explosion Noire" (Black Explosion)
+Special Method: Sauron’s frappe() method selects an attack to inflict heavy damage on Gandalf.
+<h2>🧩 Project Structure</h2>
+<pre> 📂 Battle-of-Wizards/ ├── personnage.py # Base class defining the main character structure. ├── magicien.py # Gandalf's class with unique abilities. ├── roisorcier.py # Sauron's class with unique abilities. └── main.py # Main game loop and logic to start the duel. </pre>
+<h2>🚀 Getting Started</h2>
 Prerequisites
-<p>To play, you’ll need Python 3.x installed on your machine.</p>
-How to Run
+To enjoy Battle of Wizards, ensure that Python 3.x is installed.
+
+Installation and Running the Game
 Clone the repository or download the project files.
-Navigate to the project directory in your terminal.
-Run the main script using the command:
+Open the terminal and navigate to the project folder.
+Start the game by running:
 bash
 Copier le code
 python main.py
-Follow the prompts to continue each turn or quit.
-Example Gameplay
+Sample Gameplay
 plaintext
 Copier le code
 Tour 1: Gandalf 100 PV, Sauron 100 PV
 Gandalf utilise Boule de Feu, infligeant 25 de dégâts.
+Sauron riposte avec Maudit, infligeant 20 de dégâts.
 ...
-Project Structure
-personnage.py: Defines the base Personnage class.
-magicien.py: Defines MagicienBlanc, Gandalf’s character class.
-roisorcier.py: Defines RoiSorcier, Sauron’s character class.
-main.py: Runs the game, managing turns and determining the winner.
-Future Enhancements
-<p>Here are some potential features to expand the project:</p>
-Add more characters and attacks.
-Implement player control to choose specific attacks.
-Enhance combat mechanics with more attributes (e.g., mana, stamina).
+💡 Future Enhancements
+Additional Characters: Add more characters with unique spells.
+Player Control: Allow the player to choose attacks.
+Advanced Mechanics: Introduce mana, stamina, and more dynamic combat attributes.
+📊 Stats and Technologies
+<p>Developed with Python, using Object-Oriented Programming principles.</p>
