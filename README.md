@@ -1,4 +1,4 @@
-#🧙 Battle of Wizards 🧙
+<h1>🧙 Battle of Wizards 🧙</h1>
 <p align="center"> <em>A magical duel of wits and strength between two iconic characters: <strong>Gandalf</strong> and <strong>Sauron</strong>!</em> </p>
 🌟 Project Overview
 Battle of Wizards is a Python-based game featuring a turn-based duel between Gandalf, the White Wizard, and Sauron, the Dark Sorcerer. Each character has unique abilities, and the game continues until one character’s health reaches zero.
